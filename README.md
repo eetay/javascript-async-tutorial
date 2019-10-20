@@ -16,6 +16,7 @@
 - [32.js](./32.js) // 'async' is really wrapping function in a Promise
 - [33.js](./33.js) // async functions only seem to execute all in syncronous manner
 - [34.js](./34.js) // async functions only seem to execute all in syncronous manner
+- [35.js](./35.js) // use try-catch around await for a Promise, instead of a .catch() handler
 - [40.js](./40.js) // A promise can be rejected with a value/error - use catch() to handle rejection
 - [41.js](./41.js) // A rejected promise without a catch() cause error; similar to throw without a catch
 - [50.js](./50.js) // then() can be chained.
