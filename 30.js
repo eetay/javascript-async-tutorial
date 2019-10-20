@@ -1,4 +1,4 @@
-// Waiting for promise to resolve, instead of 'then()'
+// Waiting for promise to resolve, instead of `.then()`
 
 /*
 Any promise we have, we can await. 

@@ -1,6 +1,4 @@
-// 'async' is really wrapping function in a Promise
-
-// An async function returns a 'Promise' which will resolve to whatever function returns
+// you can `.then()` on the Promise a `async` function returns, or anything else you do with a `Promise`
 
 let unresolvedPromise = new Promise( 
   (resolve, reject) => {

@@ -1,6 +1,4 @@
-// 'async' is really wrapping function in a Promise
-
-// An async function returns a 'Promise' which will resolve to whatever function returns
+// `async` is forcing the function to return a `Promise` which will resolve to whatever function execution returns, when function is done
 
 let unresolvedPromise = new Promise( 
   (resolve, reject) => {
@@ -12,7 +10,7 @@ async function f() {
    console.log('FIRST LINE IN f()')
    let innerValue = await unresolvedPromise
    console.log('LAST LINE IN f()', innerValue)
-   return innerValue
+   return innerValue // f() returns a Promise which resolves to 'innerValue' when this statement completes
 }
 
 let x = f()

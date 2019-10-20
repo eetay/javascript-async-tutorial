@@ -1,4 +1,4 @@
-// Promise.all() creates a Promise that is resolved when all promises are resolved
+// `Promise.all()` creates a Promise that is resolved when all promises are resolved
 
 let resolvedPromise = Promise.resolve('someValue')
 

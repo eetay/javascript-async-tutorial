@@ -1,5 +1,5 @@
 // whether the value will be there in future, or it’s already known, I just call `then()` in either case
-//  the then() handler is always called asyncronously [behaves like using setTimeout(..., 0)]
+// the `then()` handler is always called asyncronously [i.e.: behaves like using setTimeout(..., 0)]
 
 let resolvedPromise = Promise.resolve('someValue')
 

@@ -10,10 +10,10 @@
 - [20.js](./20.js) // A Promise object contains a value not necessarily known when the promise is created
 - [21.js](./21.js) // A asyncronous Promise is created with 'new Promise( (resolve, reject) => {...} )'
 - [22.js](./22.js) // whether the value will be there in future, or it’s already known, I just call `then()` in either case
-- [23.js](./23.js) // Promise.all() creates a Promise that is resolved when all promises are resolved
-- [30.js](./30.js) // Waiting for promise to resolve, instead of 'then()'
-- [31.js](./31.js) // 'async' is really wrapping function in a Promise
-- [32.js](./32.js) // 'async' is really wrapping function in a Promise
+- [23.js](./23.js) // `Promise.all()` creates a Promise that is resolved when all promises are resolved
+- [30.js](./30.js) // Waiting for promise to resolve, instead of `.then()`
+- [31.js](./31.js) // `async` is forcing the function to return a `Promise` which resolves to whatever function execution returns, when function is done
+- [32.js](./32.js) // you can `.then()` on the Promise a `async` function returns, or anything else you do with a `Promise`
 - [33.js](./33.js) // async functions only seem to execute all in syncronous manner
 - [34.js](./34.js) // async functions only seem to execute all in syncronous manner
 - [35.js](./35.js) // use try-catch around await for a Promise, instead of a .catch() handler

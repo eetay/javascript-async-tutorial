@@ -1,6 +1,6 @@
-// then() can be chained. 
-// Result of one then()'s handler is passed as parameter to next then()'s handler
-// IMPORTANT: If such a result is a 'Promise' it is resolved before excuting the next handler
+// `.then()` and `.catch()` can be chained. 
+// The result of one `then()`'s handler is passed as parameter to next `then()`'s handler
+// IMPORTANT: If such a result is a `Promise` it is resolved before excuting the next handler
 
 
 let p1 = new Promise(function(resolve, reject) {
