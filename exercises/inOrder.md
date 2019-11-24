@@ -35,8 +35,12 @@ Using [node-fetch](https://humanwhocodes.com/snippets/2019/01/nodejs-medium-api-
 Make a node.js script that makes a [fetch](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch) call to the [Star Wars API](https://swapi.co/) and get the opening crawl for each film in the series. Once you have finished that, loop through the array of planets for each movie and make more fetch calls to collect the name of each planet, organized by film. Then, console log an array of objects in which each object contains the opening crawl for a specific movie, along with the names of every planet featured in that movie.
 
 ### Exercise 4
-Implement a node.js script which implements a simple version of ```Promise.all``` called ```waitForAllPromises()```. This function should accept an array of promises and return an array of resolved values. If any of the promises are rejected, the function should catch them.
-- Food for thought: what should ```waitForAllPromises()``` return? can it be defined as an async function?
+Implement a node.js script which implements a simple version of ```Promise.all``` called ```doAllPromises()```. 
+This function should accept an array of promises and ```await doAllPromises()``` should return an array of resolved values. If any of the promises are rejected, the function should catch them.
+Food for thought: 
+- what is return type for ```doAllPromises()```? 
+- can ```doAllPromises()``` be defined as an async function?
+
 Add your code where it says '// your code here'
 
 ```javascript
@@ -58,7 +62,7 @@ const makePromise = (promiseId, value, action_type) => {
   )
 }
 
-function waitForAllPromises(arrayOfPromises) {
+function doAllPromises(arrayOfPromises) {
    // your code here
 }
 
@@ -67,10 +71,10 @@ const promisesArray = [
     makePromise('PromiseB', 'resultOfB', ACTION_REJECT)
 ]
 
-waitForAllPromises(promisesArray).then(
-    result => console.log('All resolved:', result)
+doAllPromises(promisesArray).then(
+    arrayOfResults => console.log('All resolved:', arrayOfResults)
 ).catch(
-    errorResult => console.log('One rejected: ', errorResult)
+    errorFromRejectedPromise => console.log('One rejected: ', errorFromRejectedPromise)
 )
 ```
 ```
