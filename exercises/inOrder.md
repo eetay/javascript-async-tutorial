@@ -36,6 +36,9 @@ Make a node.js script that makes a [fetch](https://developer.mozilla.org/en-US/d
 
 ### Exercise 4
 Implement a node.js script which implements a simple version of ```Promise.all``` called ```waitForAllPromises()```. This function should accept an array of promises and return an array of resolved values. If any of the promises are rejected, the function should catch them.
+- Food for thought: what should ```waitForAllPromises()``` return? can it be defined as an async function?
+Add your code where it says '// your code here'
+
 ```javascript
 const ACTION_REJECT='reject'
 const ACTION_RESOLVE='resolve'
