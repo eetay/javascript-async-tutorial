@@ -20,3 +20,20 @@
 - [40.js](./40.js) // A promise can be rejected with a value/error - use catch() to handle rejection
 - [41.js](./41.js) // A rejected promise without a catch() cause error; similar to throw without a catch
 - [50.js](./50.js) // then() can be chained.
+- [10.js](./10.js) // A promise is a special kind of javascript object which contains another object
+- [11.js](./11.js) // How do I access the data in a promise? I use `.then()`:
+- [12.js](./12.js) // then() handler function is executed similar to 'setTimeout(handler, 0)', triggered when promise is resolved
+- [20.js](./20.js) // A Promise object contains a value not necessarily known when the promise is created
+- [21.js](./21.js) // A asyncronous Promise is created with 'new Promise( (resolve, reject) => {...} )'
+- [22.js](./22.js) // whether the value will be there in future, or it’s already known, I just call `then()` in either case
+- [23.js](./23.js) // `Promise.all()` creates a Promise that is resolved when all promises are resolved
+- [30.js](./30.js) // Waiting for promise to resolve, instead of `.then()`
+- [31.js](./31.js) // `async` is forcing the function to return a `Promise` which will resolve to whatever function execution returns, when function is done
+- [32.js](./32.js) // you can `.then()` on the Promise a `async` function returns, or anything else you do with a `Promise`
+- [33.js](./33.js) // async functions only seem to execute all in syncronous manner
+- [34.js](./34.js) // async functions only seem to execute all in syncronous manner
+- [35.js](./35.js) // use try-catch around await for a Promise, instead of a .catch() handler
+- [40.js](./40.js) // A promise can be rejected with a value/error - use catch() to handle rejection
+- [41.js](./41.js) // A rejected promise without a catch() cause error; similar to throw without a catch
+- [50.js](./50.js) // `.then()` and `.catch()` can be chained.
+- [51.js](./51.js) // There's no function like Promise.all to serially evaluate many promises
