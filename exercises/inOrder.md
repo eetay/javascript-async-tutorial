@@ -36,11 +36,11 @@ you should create two functions:
 function makePromiseToLogOne(...) { /*your code here */ }
 function makePromiseToLogTwo(...) { /*your code here */ }
 
-function inOrder(promiseA, promiseB) {
+function inOrder(promiseCreatorA, promiseCreatorB) {
     ... // your code here
 }
 
-inOrder(makePromiseToLogOne(),makePromiseToLogTwo())
+inOrder(makePromiseToLogOne, makePromiseToLogTwo)
 ```
 
 
