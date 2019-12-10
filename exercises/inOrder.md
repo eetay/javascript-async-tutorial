@@ -1,14 +1,15 @@
 ### Exercise 1
 Write a function called inOrder that accepts two callbacks and invokes them in order. Implement inOrder using the callback pattern.
 ```javascript
-var logOne = function(callback) {
+
+const logOne = function(callback) { // Do NOT modify
   setTimeout(function() {
     console.log("one!");
     callback()
   }, Math.random() * 1000);
 }
 
-var logTwo = function(callback) {
+const logTwo = function(callback) { // Do NOT modify
   setTimeout(function() {
     console.log("two!");
     callback()
@@ -20,7 +21,7 @@ function inOrder(a, b) {  // Change this function to solve
    b(function () {})  
 }
 
-inOrder(logOne, logTwo);
+inOrder(logOne, logTwo); // Do NOT modify
 ```
 
 It should always log those two in order regardless of their timing:
@@ -33,6 +34,14 @@ It should always log those two in order regardless of their timing:
 Refactor inOrder to use promises.
 you should create two functions:
 ```
+const logOne = function(callback) { // Do NOT modify
+  ...
+}
+
+const logTwo = function(callback) { // Do NOT modify
+  ... 
+}
+
 function makePromiseToLogOne(...) { /*your code here */ }
 function makePromiseToLogTwo(...) { /*your code here */ }
 
@@ -48,7 +57,11 @@ inOrder(makePromiseToLogOne, makePromiseToLogTwo)
 
 ### Exercise 3
 Using [node-fetch](https://humanwhocodes.com/snippets/2019/01/nodejs-medium-api-fetch/)
-Make a node.js script that makes a [fetch](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch) call to the [Star Wars API](https://swapi.co/) and get the opening crawl for each film in the series. Once you have finished that, loop through the array of planets for each movie and make more fetch calls to collect the name of each planet, organized by film. Then, console log an array of objects in which each object contains the opening crawl for a specific movie, along with the names of every planet featured in that movie.
+Make a node.js script that makes a [fetch](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch) call to the [Star Wars API](https://swapi.co/) and:
+A. Get the "opening crawl" for each film in the series. 
+B. Loop through the array of planets for each movie and make more fetch calls to collect the name of each planet, organized by film. 
+C. Then, console log an array of objects in which each object contains the opening crawl for a specific movie, along with the names of every planet featured in that movie.
+
 Some more ```fetch()``` documentation: [MDN: Using Fetch](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch)
 
 ### Exercise 4
