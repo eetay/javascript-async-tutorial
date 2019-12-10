@@ -15,6 +15,11 @@ var logTwo = function(callback) {
   }, Math.random() * 1000);
 }
 
+function inOrder(a, b) {  // Change this function to solve
+   a(function () {})
+   b(function () {})  
+}
+
 inOrder(logOne, logTwo);
 ```
 
