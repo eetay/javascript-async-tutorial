@@ -58,9 +58,9 @@ inOrder(makePromiseToLogOne, makePromiseToLogTwo)
 ### Exercise 3
 Using [node-fetch](https://humanwhocodes.com/snippets/2019/01/nodejs-medium-api-fetch/)
 Make a node.js script that makes a [fetch](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch) call to the [Star Wars API](https://swapi.co/) and:
-A. Get the "opening crawl" for each film in the series. 
-B. Loop through the array of planets for each movie and make more fetch calls to collect the name of each planet, organized by film. 
-C. Then, console log an array of objects in which each object contains the opening crawl for a specific movie, along with the names of every planet featured in that movie.
+* A. Get the "opening crawl" for each film in the series. 
+* B. Loop through the array of planets for each movie and make more fetch calls to collect the name of each planet, organized by film. 
+* C. Then, console log an array of objects in which each object contains the opening crawl for a specific movie, along with the names of every planet featured in that movie.
 
 Some more ```fetch()``` documentation: [MDN: Using Fetch](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch)
 
