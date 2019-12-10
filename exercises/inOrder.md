@@ -69,7 +69,8 @@ fetch = require('node-fetch')
 
 function getFilms() { // Complete this function
   ...
-  // return array of films
+  // return a promise that will resolve into an array of films
+  // a film object can be examined in Star Wars API site 
 }
 
 function solveA(films) { // Solve (A) above in this function
