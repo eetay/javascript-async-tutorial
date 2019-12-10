@@ -33,9 +33,13 @@ It should always log those two in order regardless of their timing:
 Refactor inOrder to use promises.
 you should create two functions:
 ```
-function makePromiseToLogOne(...) {...}
-function makePromiseToLogTwo(...) {...}
-...
+function makePromiseToLogOne(...) { /*your code here */ }
+function makePromiseToLogTwo(...) { /*your code here */ }
+
+function inOrder(promiseA, promiseB) {
+    ... // your code here
+}
+
 inOrder(makePromiseToLogOne(),makePromiseToLogTwo())
 ```
 
