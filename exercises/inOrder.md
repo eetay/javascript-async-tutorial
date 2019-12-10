@@ -1,13 +1,19 @@
 ### Exercise 1
 Write a function called inOrder that accepts two callbacks and invokes them in order. Implement inOrder using the callback pattern.
 ```javascript
-var logOne = setTimeout(function() {
-  console.log("one!");
-}, Math.random() * 1000);
+var logOne = function(callback) {
+  setTimeout(function() {
+    console.log("one!");
+    callback()
+  }, Math.random() * 1000);
+}
 
-var logTwo = setTimeout(function() {
-  console.log("two!");
-}, Math.random() * 1000);
+var logTwo = function(callback) {
+  setTimeout(function() {
+    console.log("one!");
+    callback()
+  }, Math.random() * 1000);
+}
 
 inOrder(logOne, logTwo);
 ```
