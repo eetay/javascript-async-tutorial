@@ -10,7 +10,7 @@ var logOne = function(callback) {
 
 var logTwo = function(callback) {
   setTimeout(function() {
-    console.log("one!");
+    console.log("two!");
     callback()
   }, Math.random() * 1000);
 }
