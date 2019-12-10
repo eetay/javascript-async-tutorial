@@ -64,6 +64,30 @@ Make a node.js script that makes a [fetch](https://developer.mozilla.org/en-US/d
 
 Some more ```fetch()``` documentation: [MDN: Using Fetch](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch)
 
+```javascript
+fetch = require('node-fetch') 
+
+function getFilms() { // Complete this function
+  ...
+  // return array of films
+}
+
+function solveA(films) { // Solve (A) above in this function
+  ...
+}
+
+async function solveB(films) { // Solve (B) above in this function
+   ...
+}
+
+async function solveAll() {
+    getFilms().then(films => solveA(films))
+    getFilms().then(films => solveB(films))
+}
+
+solveAll()
+```
+
 ### Exercise 4
 Implement a node.js script which implements a simple version of ```Promise.all``` called ```doAllPromises()```. 
 This function should accept an array of promises and ```await doAllPromises()``` should return an array of resolved values. If any of the promises are rejected, the function should catch them.
