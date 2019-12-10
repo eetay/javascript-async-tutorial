@@ -31,6 +31,7 @@ you should create two functions:
 function makePromiseToLogOne(...) {...}
 function makePromiseToLogTwo(...) {...}
 ...
+inOrder(makePromiseToLogOne(),makePromiseToLogTwo())
 ```
 
 
