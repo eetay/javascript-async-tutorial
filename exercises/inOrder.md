@@ -132,4 +132,3 @@ doAllPromises(promisesArray).then(
     errorFromRejectedPromise => console.log('One rejected: ', errorFromRejectedPromise)
 )
 ```
-```
